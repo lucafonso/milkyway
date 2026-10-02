@@ -1,13 +1,121 @@
-/* MILKY WAY · IDENTIDAD AUDIOVISUAL AZUL / VIOLETA */
-:root{--navy:#071a3d;--navy-2:#0d2855;--blue:#087fc3;--electric:#1677ff;--cyan:#39bdf8;--purple:#5a42d6;--violet:#8d62ec;--ice:#f3f8fc;--white:#fff;--ink:#101828;--muted:#697586;--line:#dce7f1;--gradient:linear-gradient(120deg,#071a3d 0%,#087fc3 38%,#5a42d6 72%,#8d62ec 100%)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--white);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6;overflow-x:hidden;-webkit-text-size-adjust:100%}a{color:inherit;text-decoration:none}img{display:block;max-width:100%;height:auto}h1,h2,h3,p{margin-top:0}
-.site-header{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:16px 6%;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:12px}.brand-mark{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--gradient);color:#fff;font-size:13px;font-weight:800;letter-spacing:-1px}.brand-copy{display:flex;flex-direction:column;line-height:1.05}.brand-copy strong{font-size:14px;letter-spacing:3px}.brand-copy small{margin-top:5px;color:var(--muted);font-size:7px;letter-spacing:2.2px}.nav{display:flex;gap:26px}.nav a{color:#48617d;font-size:9px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.nav a:hover{color:var(--purple)}
-.hero{position:relative;min-height:calc(100vh - 77px);display:flex;align-items:center;padding:90px 8%;overflow:hidden;background:var(--navy);color:#fff}.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 20%,rgba(57,189,248,.36),transparent 24%),radial-gradient(circle at 70% 60%,rgba(141,98,236,.35),transparent 31%),linear-gradient(135deg,#06162f 0%,#092b62 50%,#401f92 100%)}.hero-content{position:relative;z-index:2;width:100%;max-width:900px}.kicker{margin-bottom:22px;color:#8bdcff;font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase}.hero h1{max-width:950px;margin-bottom:30px;font-size:clamp(58px,8vw,116px);line-height:.91;letter-spacing:-4px}.hero h1 span{background:linear-gradient(90deg,#39bdf8,#a98aff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-lead{max-width:650px;margin-bottom:34px;color:#d5e7ff;font-size:20px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 24px;border-radius:999px;font-size:9px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;transition:.25s ease}.button-primary{background:#fff;color:var(--navy)}.button-primary:hover{background:#bcecff;transform:translateY(-2px)}.button-ghost{border:1px solid rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.06)}.button-ghost:hover{background:rgba(255,255,255,.14)}.hero-badge{position:absolute;z-index:2;right:8%;bottom:10%;display:flex;flex-direction:column;align-items:center;justify-content:center;width:170px;height:170px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:rgba(255,255,255,.08);backdrop-filter:blur(10px)}.hero-badge span{font-size:55px;font-weight:800;letter-spacing:-7px}.hero-badge small{font-size:7px;letter-spacing:3px}.hero-orbit{position:absolute;z-index:1;border:1px solid rgba(154,218,255,.28);border-radius:50%;transform:rotate(-20deg)}.orbit-one{right:-120px;top:20%;width:630px;height:240px}.orbit-two{right:-70px;top:36%;width:470px;height:180px;transform:rotate(32deg)}
-.section{padding:110px 8%}.section-heading{max-width:1050px;margin-bottom:58px}.section-index{margin-bottom:18px;color:var(--blue);font-size:9px;font-weight:800;letter-spacing:2px}.section h2,.transition-section h2{margin-bottom:0;font-size:clamp(42px,5.5vw,76px);line-height:1;letter-spacing:-2px}.section h2 span{color:var(--purple)}.studio-section{background:#fff}.studio-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:38px;max-width:1050px}.studio-grid>p{margin:0;color:var(--muted);font-size:16px}.studio-grid .studio-lead{color:var(--navy);font-size:27px;line-height:1.42;font-weight:700}.studio-pill{display:flex;align-items:center;min-height:88px;padding:0 24px;border:1px solid var(--line);border-radius:18px;background:var(--ice);color:#365575;font-size:10px;font-weight:800;letter-spacing:1.5px}.studio-pill:nth-of-type(4){background:#edf5ff}.studio-pill:nth-of-type(5){background:#f3efff}.studio-pill:nth-of-type(6){background:#ebfbff}
-.ecosystem-section{background:var(--navy);color:#fff}.section-heading-light .section-index{color:#75d6ff}.section-heading-light h2 span{color:#9b83ff}.section-copy{max-width:760px;margin-top:28px;color:#bcd1e7;font-size:15px}.logo-wall{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.logo-tile{min-height:190px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:22px;border-radius:22px;background:#fff;box-shadow:0 14px 40px rgba(0,0,0,.12)}.logo-tile img{width:100%;max-width:145px;max-height:85px;object-fit:contain}.logo-tile.netflix img{max-width:95px}.logo-tile.warner img{max-width:88px}.logo-tile span{color:#506176;font-size:8px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.legal-note{max-width:850px;margin:28px 0 0;color:#7f9bb7;font-size:11px}
-.locations-section{background:var(--ice)}.location-map{display:grid;grid-template-columns:1fr 70px 1fr 70px 1.12fr;align-items:stretch;max-width:1180px}.location-card{min-height:310px;display:flex;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid var(--line);border-radius:24px;background:#fff}.location-number{color:#7f94aa;font-size:10px;font-weight:800}.location-status{margin-bottom:10px;color:var(--blue);font-size:8px;font-weight:800;letter-spacing:1.5px}.location-card h3{margin-bottom:14px;color:var(--navy);font-size:34px}.location-card p{margin-bottom:0;color:var(--muted);font-size:14px}.location-card.madrid{border:0;background:var(--gradient);color:#fff;box-shadow:0 20px 50px rgba(54,58,173,.22)}.location-card.madrid .location-number,.location-card.madrid .location-status,.location-card.madrid h3,.location-card.madrid p{color:#fff}.route-line{display:flex;align-items:center;justify-content:center;color:#7ca4cb;font-size:30px}
-.transition-section{position:relative;overflow:hidden;padding:115px 8%;background:linear-gradient(135deg,#087fc3 0%,#1677ff 38%,#5a42d6 75%,#8d62ec 100%);color:#fff;text-align:center}.transition-glow{position:absolute;width:520px;height:520px;left:-170px;top:-200px;border-radius:50%;background:rgba(57,189,248,.34);filter:blur(15px)}.transition-content{position:relative;z-index:2;max-width:1120px;margin:0 auto}.kicker-white{color:#cbedff}.transition-section h2{margin-bottom:32px}.transition-section h2 span{color:#d6fbff}.transition-lead{max-width:760px;margin:0 auto 42px;font-size:24px;line-height:1.45}.transition-copy{display:grid;grid-template-columns:1fr 1fr;gap:45px;max-width:900px;margin:0 auto 55px;text-align:left}.transition-copy p{margin:0;color:rgba(255,255,255,.86);font-size:15px}.transition-steps{display:grid;grid-template-columns:repeat(4,1fr);max-width:980px;margin:0 auto 46px;border-top:1px solid rgba(255,255,255,.4)}.transition-steps div{padding:27px 18px;border-right:1px solid rgba(255,255,255,.2)}.transition-steps div:last-child{border-right:0}.transition-steps span,.transition-steps strong,.transition-steps small{display:block}.transition-steps span{margin-bottom:27px;color:#bdeeff;font-size:9px}.transition-steps strong{font-size:18px}.transition-steps small{margin-top:7px;color:rgba(255,255,255,.7);font-size:11px}.button-white{width:auto;background:#fff;color:var(--purple)}.button-white:hover{background:#d9f6ff}
-.footer{display:flex;flex-direction:column;align-items:center;gap:8px;padding:44px 20px;background:#06142f;color:#8196ad;font-size:10px;text-align:center}.footer-brand{display:flex;flex-direction:column;color:#fff}.footer-brand strong{font-size:16px;letter-spacing:3px}.footer-brand small{margin-top:5px;color:#81a0c0;font-size:7px;letter-spacing:2.2px}
-@media(max-width:1000px){.hero-badge{opacity:.35;right:2%}.logo-wall{grid-template-columns:repeat(3,1fr)}.location-map{grid-template-columns:1fr;gap:12px}.route-line{height:32px;transform:rotate(90deg)}.transition-steps{grid-template-columns:repeat(2,1fr)}.transition-steps div{border-bottom:1px solid rgba(255,255,255,.2)}}
-@media(max-width:700px){html{scroll-padding-top:0}.site-header{position:relative;flex-direction:column;padding:18px}.nav{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:7px}.nav a{display:flex;justify-content:center;align-items:center;min-height:40px;border:1px solid var(--line);border-radius:12px;font-size:8px}.hero{min-height:auto;padding:65px 22px 75px}.hero h1{font-size:43px;line-height:1.01;letter-spacing:-1px}.hero-lead{font-size:16px}.hero-actions{display:block}.button{width:100%;margin-bottom:9px}.hero-badge{display:none}.section{padding:68px 22px}.section h2,.transition-section h2{font-size:34px;line-height:1.08;letter-spacing:-.5px}.studio-grid{display:block}.studio-grid>p{margin-bottom:25px}.studio-grid .studio-lead{font-size:21px}.studio-pill{margin-bottom:8px;min-height:66px}.logo-wall{display:grid;grid-template-columns:1fr 1fr;gap:8px}.logo-tile{min-height:145px;padding:16px}.logo-tile img{max-width:110px;max-height:65px}.logo-tile:last-child{grid-column:1/-1}.location-card{min-height:245px}.transition-section{padding:75px 22px}.transition-lead{font-size:19px}.transition-copy{display:block}.transition-copy p{margin-bottom:22px}.transition-steps{display:block}.transition-steps div{border-right:0;border-bottom:1px solid rgba(255,255,255,.2)}.transition-steps span{margin-bottom:10px}}
-@media(max-width:390px){.hero h1{font-size:37px}.section h2,.transition-section h2{font-size:30px}.logo-wall{display:block}.logo-tile{margin-bottom:8px}}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Milky Way Productora Audiovisual. Nueva etapa corporativa con operaciones centralizadas en Madrid.">
+  <title>Milky Way | Productora Audiovisual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#inicio" class="brand" aria-label="Milky Way - Inicio">
+      <span class="brand-mark">MW</span>
+      <span class="brand-copy"><strong>MILKY WAY</strong><small>PRODUCTORA AUDIOVISUAL</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#nosotros">Estudio</a>
+      <a href="#ecosistema">Ecosistema</a>
+      <a href="#sedes">Sedes</a>
+      <a href="#nueva-etapa">Nueva etapa</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-content">
+        <p class="kicker">PRODUCCIÓN AUDIOVISUAL · ESPAÑA</p>
+        <h1>IDEAS QUE<br><span>ENTRAN EN ÓRBITA.</span></h1>
+        <p class="hero-lead">Una productora audiovisual preparada para conectar creatividad, tecnología y operación en una nueva etapa centralizada desde Madrid.</p>
+        <div class="hero-actions">
+          <a href="#nosotros" class="button button-primary">Conoce Milky Way</a>
+          <a href="#nueva-etapa" class="button button-ghost">Actualización corporativa</a>
+        </div>
+      </div>
+      <div class="hero-badge"><span>MW</span><small>AUDIOVISUAL</small></div>
+    </section>
+
+    <section id="nosotros" class="section studio-section">
+      <div class="section-heading">
+        <p class="section-index">01 · ESTUDIO</p>
+        <h2>CREATIVIDAD,<br><span>COORDINACIÓN Y ENTREGA.</span></h2>
+      </div>
+      <div class="studio-grid">
+        <p class="studio-lead">Milky Way desarrolla actividad audiovisual apoyándose en equipos creativos, técnicos y operativos.</p>
+        <p>La nueva organización concentra operaciones corporativas, técnicas y logísticas en Madrid, manteniendo como prioridad la continuidad del negocio y de la producción audiovisual durante la transición.</p>
+        <div class="studio-pill">CONTENIDO</div>
+        <div class="studio-pill">PRODUCCIÓN</div>
+        <div class="studio-pill">TECNOLOGÍA</div>
+        <div class="studio-pill">OPERACIONES</div>
+      </div>
+    </section>
+
+    <section id="ecosistema" class="section ecosystem-section">
+      <div class="section-heading section-heading-light">
+        <p class="section-index">02 · ECOSISTEMA AUDIOVISUAL</p>
+        <h2>MARCAS Y PLATAFORMAS<br><span>DEL SECTOR.</span></h2>
+        <p class="section-copy">Una selección visual de marcas y plataformas de referencia del entorno audiovisual. Netflix aparece además citado en la documentación interna del caso académico.</p>
+      </div>
+      <div class="logo-wall">
+        <article class="logo-tile netflix"><img src="assets/vecteezy_netflix-logo-transparent-background-png_42165811.png" alt="Netflix"><span>Netflix</span></article>
+        <article class="logo-tile prime"><img src="assets/vecteezy_primevideo-logo-square-rounded-primevideo-logo-primevideo_56658341.png" alt="Prime Video"><span>Prime Video</span></article>
+        <article class="logo-tile warner"><img src="assets/wb-warner-bros-logo-png_seeklogo-323561.png" alt="Warner Bros."><span>Warner Bros.</span></article>
+        <article class="logo-tile movistar"><img src="assets/Movistar+_Logo.png" alt="Movistar Plus"><span>Movistar+</span></article>
+        <article class="logo-tile atresmedia"><img src="assets/atresmedia-cine-logo-png_seeklogo-474151.png" alt="Atresmedia Cine"><span>Atresmedia Cine</span></article>
+      </div>
+      <p class="legal-note">Los nombres y logotipos de terceros pertenecen a sus respectivos titulares. Su inclusión en esta maqueta académica no implica relación comercial, salvo la referencia a Netflix existente en la documentación interna del caso.</p>
+    </section>
+
+    <section id="sedes" class="section locations-section">
+      <div class="section-heading">
+        <p class="section-index">03 · ESPAÑA</p>
+        <h2>DE TRES SEDES<br><span>A UN SOLO CENTRO.</span></h2>
+      </div>
+      <div class="location-map">
+        <article class="location-card closing">
+          <div class="location-number">01</div>
+          <div><p class="location-status">CIERRE PROGRAMADO</p><h3>Bilbao</h3><p>Traslado de personal, equipos y documentación dentro del proceso de centralización.</p></div>
+        </article>
+        <div class="route-line"><span>→</span></div>
+        <article class="location-card closing">
+          <div class="location-number">02</div>
+          <div><p class="location-status">CIERRE PROGRAMADO</p><h3>Barcelona</h3><p>Desmantelamiento y cierre de la sede con reubicación de la actividad en Madrid.</p></div>
+        </article>
+        <div class="route-line"><span>→</span></div>
+        <article class="location-card madrid">
+          <div class="location-number">03</div>
+          <div><p class="location-status">SEDE CENTRAL</p><h3>Madrid</h3><p>La Moraleja concentra la nueva organización corporativa y técnica de Milky Way.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="nueva-etapa" class="transition-section">
+      <div class="transition-glow"></div>
+      <div class="transition-content">
+        <p class="kicker kicker-white">CORPORATE UPDATE · 2026</p>
+        <h2>UNA SOLA SEDE.<br><span>UN MISMO EQUIPO.</span></h2>
+        <p class="transition-lead">Milky Way centraliza sus operaciones corporativas, técnicas y logísticas en Madrid.</p>
+        <div class="transition-copy">
+          <p>El proceso contempla el cierre de las sedes de Bilbao y Barcelona y el traslado de personal, equipos y documentación a Madrid.</p>
+          <p>La transición se desarrolla con un criterio esencial: mantener la continuidad operativa y evitar interrupciones en la producción audiovisual.</p>
+        </div>
+        <div class="transition-steps">
+          <div><span>01</span><strong>Preparar</strong><small>Infraestructura y transición</small></div>
+          <div><span>02</span><strong>Trasladar</strong><small>Personas, equipos y documentación</small></div>
+          <div><span>03</span><strong>Integrar</strong><small>Operaciones centralizadas</small></div>
+          <div><span>04</span><strong>Continuar</strong><small>Producción audiovisual</small></div>
+        </div>
+        <a href="#inicio" class="button button-white">Volver al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><strong>MILKY WAY</strong><small>PRODUCTORA AUDIOVISUAL</small></div>
+    <div>Madrid · España</div>
+    <div>© 2026 Milky Way</div>
+  </footer>
+</body>
+</html>
