@@ -1,121 +1,1345 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Milky Way Productora Audiovisual. Nueva etapa corporativa con operaciones centralizadas en Madrid.">
-  <title>Milky Way | Productora Audiovisual</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <a href="#inicio" class="brand" aria-label="Milky Way - Inicio">
-      <span class="brand-mark">MW</span>
-      <span class="brand-copy"><strong>MILKY WAY</strong><small>PRODUCTORA AUDIOVISUAL</small></span>
-    </a>
-    <nav class="nav" aria-label="Navegación principal">
-      <a href="#nosotros">Estudio</a>
-      <a href="#ecosistema">Ecosistema</a>
-      <a href="#sedes">Sedes</a>
-      <a href="#nueva-etapa">Nueva etapa</a>
-    </nav>
-  </header>
+/* =========================================================
+   MILKY WAY · STYLE.CSS
+   Identidad audiovisual azul / cyan / violeta
+   Rehecho desde cero para el index actual
+   ========================================================= */
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="hero-orbit orbit-one"></div>
-      <div class="hero-orbit orbit-two"></div>
-      <div class="hero-content">
-        <p class="kicker">PRODUCCIÓN AUDIOVISUAL · ESPAÑA</p>
-        <h1>IDEAS QUE<br><span>ENTRAN EN ÓRBITA.</span></h1>
-        <p class="hero-lead">Una productora audiovisual preparada para conectar creatividad, tecnología y operación en una nueva etapa centralizada desde Madrid.</p>
-        <div class="hero-actions">
-          <a href="#nosotros" class="button button-primary">Conoce Milky Way</a>
-          <a href="#nueva-etapa" class="button button-ghost">Actualización corporativa</a>
-        </div>
-      </div>
-      <div class="hero-badge"><span>MW</span><small>AUDIOVISUAL</small></div>
-    </section>
+:root {
+  --navy-950: #06142f;
+  --navy-900: #071a3d;
+  --navy-800: #0b2b5a;
+  --blue-600: #087fc3;
+  --blue-500: #1677ff;
+  --cyan-400: #39bdf8;
+  --cyan-200: #bdeeff;
+  --purple-600: #5a42d6;
+  --violet-500: #8d62ec;
 
-    <section id="nosotros" class="section studio-section">
-      <div class="section-heading">
-        <p class="section-index">01 · ESTUDIO</p>
-        <h2>CREATIVIDAD,<br><span>COORDINACIÓN Y ENTREGA.</span></h2>
-      </div>
-      <div class="studio-grid">
-        <p class="studio-lead">Milky Way desarrolla actividad audiovisual apoyándose en equipos creativos, técnicos y operativos.</p>
-        <p>La nueva organización concentra operaciones corporativas, técnicas y logísticas en Madrid, manteniendo como prioridad la continuidad del negocio y de la producción audiovisual durante la transición.</p>
-        <div class="studio-pill">CONTENIDO</div>
-        <div class="studio-pill">PRODUCCIÓN</div>
-        <div class="studio-pill">TECNOLOGÍA</div>
-        <div class="studio-pill">OPERACIONES</div>
-      </div>
-    </section>
+  --white: #ffffff;
+  --ice-50: #f6faff;
+  --ice-100: #f0f7fd;
+  --ice-200: #e8f2fb;
+  --ink: #101828;
+  --muted: #66758a;
+  --muted-light: #91a6bd;
+  --line: #dbe7f1;
 
-    <section id="ecosistema" class="section ecosystem-section">
-      <div class="section-heading section-heading-light">
-        <p class="section-index">02 · ECOSISTEMA AUDIOVISUAL</p>
-        <h2>MARCAS Y PLATAFORMAS<br><span>DEL SECTOR.</span></h2>
-        <p class="section-copy">Una selección visual de marcas y plataformas de referencia del entorno audiovisual. Netflix aparece además citado en la documentación interna del caso académico.</p>
-      </div>
-      <div class="logo-wall">
-        <article class="logo-tile netflix"><img src="assets/vecteezy_netflix-logo-transparent-background-png_42165811.png" alt="Netflix"><span>Netflix</span></article>
-        <article class="logo-tile prime"><img src="assets/vecteezy_primevideo-logo-square-rounded-primevideo-logo-primevideo_56658341.png" alt="Prime Video"><span>Prime Video</span></article>
-        <article class="logo-tile warner"><img src="assets/wb-warner-bros-logo-png_seeklogo-323561.png" alt="Warner Bros."><span>Warner Bros.</span></article>
-        <article class="logo-tile movistar"><img src="assets/Movistar+_Logo.png" alt="Movistar Plus"><span>Movistar+</span></article>
-        <article class="logo-tile atresmedia"><img src="assets/atresmedia-cine-logo-png_seeklogo-474151.png" alt="Atresmedia Cine"><span>Atresmedia Cine</span></article>
-      </div>
-      <p class="legal-note">Los nombres y logotipos de terceros pertenecen a sus respectivos titulares. Su inclusión en esta maqueta académica no implica relación comercial, salvo la referencia a Netflix existente en la documentación interna del caso.</p>
-    </section>
+  --gradient-main: linear-gradient(
+    120deg,
+    #087fc3 0%,
+    #1677ff 38%,
+    #5a42d6 72%,
+    #8d62ec 100%
+  );
 
-    <section id="sedes" class="section locations-section">
-      <div class="section-heading">
-        <p class="section-index">03 · ESPAÑA</p>
-        <h2>DE TRES SEDES<br><span>A UN SOLO CENTRO.</span></h2>
-      </div>
-      <div class="location-map">
-        <article class="location-card closing">
-          <div class="location-number">01</div>
-          <div><p class="location-status">CIERRE PROGRAMADO</p><h3>Bilbao</h3><p>Traslado de personal, equipos y documentación dentro del proceso de centralización.</p></div>
-        </article>
-        <div class="route-line"><span>→</span></div>
-        <article class="location-card closing">
-          <div class="location-number">02</div>
-          <div><p class="location-status">CIERRE PROGRAMADO</p><h3>Barcelona</h3><p>Desmantelamiento y cierre de la sede con reubicación de la actividad en Madrid.</p></div>
-        </article>
-        <div class="route-line"><span>→</span></div>
-        <article class="location-card madrid">
-          <div class="location-number">03</div>
-          <div><p class="location-status">SEDE CENTRAL</p><h3>Madrid</h3><p>La Moraleja concentra la nueva organización corporativa y técnica de Milky Way.</p></div>
-        </article>
-      </div>
-    </section>
+  --gradient-dark: linear-gradient(
+    135deg,
+    #06142f 0%,
+    #0a2b61 52%,
+    #452397 100%
+  );
 
-    <section id="nueva-etapa" class="transition-section">
-      <div class="transition-glow"></div>
-      <div class="transition-content">
-        <p class="kicker kicker-white">CORPORATE UPDATE · 2026</p>
-        <h2>UNA SOLA SEDE.<br><span>UN MISMO EQUIPO.</span></h2>
-        <p class="transition-lead">Milky Way centraliza sus operaciones corporativas, técnicas y logísticas en Madrid.</p>
-        <div class="transition-copy">
-          <p>El proceso contempla el cierre de las sedes de Bilbao y Barcelona y el traslado de personal, equipos y documentación a Madrid.</p>
-          <p>La transición se desarrolla con un criterio esencial: mantener la continuidad operativa y evitar interrupciones en la producción audiovisual.</p>
-        </div>
-        <div class="transition-steps">
-          <div><span>01</span><strong>Preparar</strong><small>Infraestructura y transición</small></div>
-          <div><span>02</span><strong>Trasladar</strong><small>Personas, equipos y documentación</small></div>
-          <div><span>03</span><strong>Integrar</strong><small>Operaciones centralizadas</small></div>
-          <div><span>04</span><strong>Continuar</strong><small>Producción audiovisual</small></div>
-        </div>
-        <a href="#inicio" class="button button-white">Volver al inicio</a>
-      </div>
-    </section>
-  </main>
+  --shadow-soft: 0 18px 55px rgba(16, 40, 80, 0.12);
+  --shadow-card: 0 14px 38px rgba(8, 35, 78, 0.10);
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --content: 1180px;
+}
 
-  <footer class="footer">
-    <div class="footer-brand"><strong>MILKY WAY</strong><small>PRODUCTORA AUDIOVISUAL</small></div>
-    <div>Madrid · España</div>
-    <div>© 2026 Milky Way</div>
-  </footer>
-</body>
-</html>
+/* =========================
+   RESET
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  background: var(--white);
+  color: var(--ink);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body,
+button,
+a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  min-height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 15px max(5%, calc((100vw - var(--content)) / 2));
+
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(7, 26, 61, 0.09);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.brand {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: var(--gradient-main);
+  color: var(--white);
+
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -1px;
+
+  box-shadow: 0 8px 25px rgba(22, 119, 255, 0.25);
+}
+
+.brand-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.brand-copy strong {
+  color: var(--navy-900);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2.8px;
+  white-space: nowrap;
+}
+
+.brand-copy small {
+  margin-top: 5px;
+  color: #7790aa;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.nav a {
+  position: relative;
+  display: block;
+  padding: 8px 0;
+
+  color: #536c86;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--gradient-main);
+  transition: width 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--purple-600);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  width: 100%;
+  min-height: calc(100svh - 78px);
+
+  display: flex;
+  align-items: center;
+
+  padding: clamp(80px, 10vw, 135px)
+           max(7%, calc((100vw - var(--content)) / 2));
+
+  background: var(--gradient-dark);
+  color: var(--white);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 83% 18%,
+      rgba(57, 189, 248, 0.34) 0%,
+      rgba(57, 189, 248, 0.10) 24%,
+      transparent 43%
+    ),
+    radial-gradient(
+      circle at 70% 70%,
+      rgba(141, 98, 236, 0.36) 0%,
+      rgba(141, 98, 236, 0.08) 32%,
+      transparent 54%
+    );
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -15%;
+  bottom: -55%;
+  width: 75vw;
+  height: 75vw;
+  max-width: 1000px;
+  max-height: 1000px;
+  border-radius: 50%;
+  border: 1px solid rgba(160, 222, 255, 0.15);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 4;
+
+  width: min(100%, 880px);
+}
+
+.kicker {
+  margin-bottom: 22px;
+  color: #94e1ff;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+}
+
+.kicker-white {
+  color: #d0f4ff;
+}
+
+.hero h1 {
+  max-width: 950px;
+  margin-bottom: 30px;
+
+  font-size: clamp(58px, 7.7vw, 112px);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -4px;
+  word-spacing: 0;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #5ad2ff 0%, #a98dff 72%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-lead {
+  width: min(100%, 640px);
+  margin-bottom: 34px;
+
+  color: #d8eaff;
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  min-height: 50px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.button-primary {
+  background: var(--white);
+  color: var(--navy-900);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  background: #dff7ff;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.20);
+}
+
+.button-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--white);
+}
+
+.button-ghost:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.button-white {
+  background: var(--white);
+  color: var(--purple-600);
+  box-shadow: 0 12px 28px rgba(12, 37, 95, 0.18);
+}
+
+.button-white:hover {
+  transform: translateY(-2px);
+  background: #e2f8ff;
+}
+
+.hero-badge {
+  position: absolute;
+  z-index: 3;
+  right: max(7%, calc((100vw - var(--content)) / 2));
+  bottom: 11%;
+
+  width: 166px;
+  height: 166px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.hero-badge span {
+  margin-left: -7px;
+  font-size: 53px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -7px;
+}
+
+.hero-badge small {
+  margin-top: 8px;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+}
+
+.hero-orbit {
+  position: absolute;
+  z-index: 1;
+  right: -130px;
+  border: 1px solid rgba(179, 229, 255, 0.24);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.orbit-one {
+  top: 19%;
+  width: 650px;
+  height: 245px;
+  transform: rotate(-20deg);
+}
+
+.orbit-two {
+  top: 39%;
+  right: -75px;
+  width: 470px;
+  height: 180px;
+  transform: rotate(31deg);
+}
+
+/* =========================
+   COMMON SECTION STYLING
+   ========================= */
+
+.section {
+  width: 100%;
+  padding: clamp(80px, 9vw, 115px)
+           max(7%, calc((100vw - var(--content)) / 2));
+}
+
+.section-heading {
+  width: min(100%, 1040px);
+  margin-bottom: 56px;
+}
+
+.section-index {
+  margin-bottom: 18px;
+  color: var(--blue-600);
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.section h2,
+.transition-section h2 {
+  margin-bottom: 0;
+
+  font-size: clamp(42px, 5.4vw, 74px);
+  font-weight: 900;
+  line-height: 1.01;
+  letter-spacing: -2px;
+}
+
+.section h2 span {
+  color: var(--purple-600);
+}
+
+/* =========================
+   STUDIO
+   ========================= */
+
+.studio-section {
+  background: var(--white);
+}
+
+.studio-grid {
+  width: min(100%, 1050px);
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px 42px;
+}
+
+.studio-grid > p {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.studio-grid .studio-lead {
+  color: var(--navy-900);
+  font-size: clamp(22px, 2.3vw, 27px);
+  font-weight: 800;
+  line-height: 1.43;
+}
+
+.studio-pill {
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+
+  background: var(--ice-100);
+  color: #3d5c7c;
+
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+
+  box-shadow: 0 6px 20px rgba(12, 71, 129, 0.04);
+}
+
+.studio-pill:nth-of-type(4) {
+  background: #eef6ff;
+}
+
+.studio-pill:nth-of-type(5) {
+  background: #f2efff;
+}
+
+.studio-pill:nth-of-type(6) {
+  background: #eafbff;
+}
+
+/* =========================
+   ECOSYSTEM / LOGOS
+   ========================= */
+
+.ecosystem-section {
+  background:
+    radial-gradient(circle at 95% 0%, rgba(90, 66, 214, 0.24), transparent 29%),
+    var(--navy-900);
+  color: var(--white);
+}
+
+.section-heading-light .section-index {
+  color: #7addff;
+}
+
+.section-heading-light h2 span {
+  color: #a98fff;
+}
+
+.section-copy {
+  width: min(100%, 760px);
+  margin: 28px 0 0;
+  color: #bdd2e7;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.logo-wall {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.logo-tile {
+  min-width: 0;
+  min-height: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.logo-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.18);
+}
+
+.logo-tile img {
+  width: 100%;
+  max-width: 145px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.logo-tile.netflix img {
+  max-width: 96px;
+}
+
+.logo-tile.prime img {
+  max-width: 128px;
+}
+
+.logo-tile.warner img {
+  max-width: 88px;
+}
+
+.logo-tile.movistar img {
+  max-width: 135px;
+}
+
+.logo-tile.atresmedia img {
+  max-width: 145px;
+}
+
+.logo-tile span {
+  color: #53667b;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.legal-note {
+  width: min(100%, 850px);
+  margin: 27px 0 0;
+  color: #809ab6;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================
+   LOCATIONS
+   ========================= */
+
+.locations-section {
+  background:
+    linear-gradient(180deg, var(--ice-50), var(--ice-100));
+}
+
+.location-map {
+  width: min(100%, 1180px);
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    70px
+    minmax(0, 1fr)
+    70px
+    minmax(0, 1.12fr);
+  align-items: stretch;
+}
+
+.location-card {
+  min-width: 0;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+
+  background: var(--white);
+  box-shadow: 0 10px 30px rgba(25, 69, 112, 0.06);
+}
+
+.location-number {
+  color: #8297ad;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.location-status {
+  margin-bottom: 10px;
+  color: var(--blue-600);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+}
+
+.location-card h3 {
+  margin-bottom: 13px;
+  color: var(--navy-900);
+  font-size: 33px;
+  line-height: 1;
+}
+
+.location-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.location-card.madrid {
+  border: 0;
+  background: var(--gradient-main);
+  color: var(--white);
+  box-shadow: 0 22px 52px rgba(73, 75, 205, 0.22);
+}
+
+.location-card.madrid .location-number,
+.location-card.madrid .location-status,
+.location-card.madrid h3,
+.location-card.madrid p {
+  color: var(--white);
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7da5ce;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* =========================
+   TRANSITION
+   ========================= */
+
+.transition-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  width: 100%;
+  padding: clamp(90px, 10vw, 120px)
+           max(7%, calc((100vw - var(--content)) / 2));
+
+  background: var(--gradient-main);
+  color: var(--white);
+  text-align: center;
+}
+
+.transition-section::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(128, 229, 255, 0.35), transparent 28%),
+    radial-gradient(circle at 90% 90%, rgba(205, 178, 255, 0.28), transparent 32%);
+}
+
+.transition-glow {
+  position: absolute;
+  z-index: -1;
+  left: -190px;
+  top: -230px;
+  width: 560px;
+  height: 560px;
+  border-radius: 50%;
+  background: rgba(57, 189, 248, 0.25);
+  filter: blur(25px);
+}
+
+.transition-content {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.transition-section h2 {
+  margin-bottom: 32px;
+}
+
+.transition-section h2 span {
+  color: #dcf8ff;
+}
+
+.transition-lead {
+  width: min(100%, 760px);
+  margin: 0 auto 42px;
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.48;
+}
+
+.transition-copy {
+  width: min(100%, 900px);
+  margin: 0 auto 55px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+
+  text-align: left;
+}
+
+.transition-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.transition-steps {
+  width: min(100%, 980px);
+  margin: 0 auto 46px;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.transition-steps div {
+  min-width: 0;
+  padding: 27px 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.transition-steps div:last-child {
+  border-right: 0;
+}
+
+.transition-steps span,
+.transition-steps strong,
+.transition-steps small {
+  display: block;
+}
+
+.transition-steps span {
+  margin-bottom: 26px;
+  color: #c3efff;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.transition-steps strong {
+  font-size: 18px;
+}
+
+.transition-steps small {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  padding: 44px 20px;
+
+  background: var(--navy-950);
+  color: #839ab3;
+
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.footer-brand strong {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+
+.footer-brand small {
+  margin-top: 5px;
+  color: #85a5c5;
+  font-size: 7px;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (max-width: 1050px) {
+  .site-header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav {
+    gap: 17px;
+  }
+
+  .hero-badge {
+    right: 3%;
+    width: 145px;
+    height: 145px;
+    opacity: 0.55;
+  }
+
+  .hero-badge span {
+    font-size: 46px;
+  }
+
+  .logo-wall {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .location-map {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .route-line {
+    height: 34px;
+    transform: rotate(90deg);
+  }
+
+  .transition-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .transition-steps div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media screen and (max-width: 720px) {
+  html {
+    scroll-padding-top: 0;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .site-header {
+    position: relative;
+    min-height: auto;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+
+    padding: 16px 18px 18px;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  .brand-copy strong {
+    font-size: 12px;
+    letter-spacing: 2.2px;
+  }
+
+  .brand-copy small {
+    font-size: 6px;
+    letter-spacing: 1.5px;
+  }
+
+  .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+
+  .nav a {
+    min-width: 0;
+    min-height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 4px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+
+    background: var(--white);
+    font-size: 8px;
+    letter-spacing: 0.55px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .nav a::after {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    display: block;
+    padding: 64px 21px 72px;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .kicker {
+    margin-bottom: 18px;
+    font-size: 9px;
+    letter-spacing: 1.25px;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    margin-bottom: 25px;
+
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -1px;
+    word-spacing: 0;
+
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero-lead {
+    max-width: 100%;
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 1.58;
+  }
+
+  .hero-actions {
+    display: block;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 9px;
+    font-size: 9px;
+    letter-spacing: 0.7px;
+  }
+
+  .hero-badge,
+  .hero-orbit {
+    display: none;
+  }
+
+  .section {
+    padding: 65px 21px;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .section-index {
+    margin-bottom: 15px;
+    font-size: 8px;
+    letter-spacing: 1.1px;
+  }
+
+  .section h2,
+  .transition-section h2 {
+    font-size: 33px;
+    line-height: 1.09;
+    letter-spacing: -0.5px;
+    word-spacing: 0;
+
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .studio-grid {
+    display: block;
+  }
+
+  .studio-grid > p {
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .studio-grid .studio-lead {
+    font-size: 21px;
+  }
+
+  .studio-pill {
+    min-height: 64px;
+    margin-bottom: 8px;
+    padding: 0 19px;
+    font-size: 9px;
+  }
+
+  .section-copy {
+    margin-top: 23px;
+    font-size: 14px;
+  }
+
+  .logo-wall {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .logo-tile {
+    min-height: 140px;
+    gap: 14px;
+    padding: 15px;
+    border-radius: 18px;
+  }
+
+  .logo-tile img {
+    max-width: 105px;
+    max-height: 62px;
+  }
+
+  .logo-tile.netflix img {
+    max-width: 74px;
+  }
+
+  .logo-tile.warner img {
+    max-width: 68px;
+  }
+
+  .logo-tile:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .legal-note {
+    margin-top: 22px;
+    font-size: 10px;
+  }
+
+  .location-map {
+    display: block;
+  }
+
+  .location-card {
+    min-height: 235px;
+    margin-bottom: 10px;
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .location-card h3 {
+    font-size: 27px;
+  }
+
+  .route-line {
+    height: 30px;
+    transform: rotate(90deg);
+    font-size: 25px;
+  }
+
+  .transition-section {
+    padding: 72px 21px;
+  }
+
+  .transition-lead {
+    margin-bottom: 34px;
+    font-size: 18px;
+  }
+
+  .transition-copy {
+    display: block;
+    margin-bottom: 38px;
+    text-align: center;
+  }
+
+  .transition-copy p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .transition-steps {
+    display: block;
+    margin-bottom: 34px;
+  }
+
+  .transition-steps div {
+    padding: 22px 12px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .transition-steps div:last-child {
+    border-bottom: 0;
+  }
+
+  .transition-steps span {
+    margin-bottom: 9px;
+  }
+
+  .button-white {
+    width: min(100%, 320px);
+  }
+
+  .footer {
+    padding: 38px 18px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media screen and (max-width: 420px) {
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero h1 {
+    font-size: 37px;
+    line-height: 1.04;
+    letter-spacing: -0.5px;
+  }
+
+  .section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section h2,
+  .transition-section h2 {
+    font-size: 29px;
+    line-height: 1.11;
+    letter-spacing: -0.25px;
+  }
+
+  .logo-wall {
+    display: block;
+  }
+
+  .logo-tile {
+    margin-bottom: 8px;
+  }
+
+  .transition-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+/* =========================
+   VERY SMALL MOBILE
+   ========================= */
+
+@media screen and (max-width: 350px) {
+  .site-header {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .nav {
+    gap: 5px;
+  }
+
+  .nav a {
+    font-size: 7px;
+    letter-spacing: 0.2px;
+  }
+
+  .hero {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero h1 {
+    font-size: 33px;
+  }
+
+  .hero-lead {
+    font-size: 15px;
+  }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section h2,
+  .transition-section h2 {
+    font-size: 27px;
+  }
+
+  .transition-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
