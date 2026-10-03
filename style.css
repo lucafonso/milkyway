@@ -1343,3 +1343,218 @@ p {
     transition: none !important;
   }
 }
+
+
+/* CORPORATE UPDATE: mensaje centrado y simplificado */
+.transition-message {
+  width: min(100%, 820px);
+  margin: 0 auto 44px;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .transition-message {
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+
+/* =========================================================
+   ALINEACION GLOBAL DE CONTENIDOS
+   Unifica el eje visual de títulos, textos y bloques
+   ========================================================= */
+
+.hero-content,
+.section-heading,
+.studio-grid,
+.logo-wall,
+.legal-note,
+.location-map,
+.transition-content {
+  width: min(100%, 1120px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Secciones comerciales: mismo eje izquierdo */
+.section-heading {
+  text-align: left;
+}
+
+.section-index,
+.section-heading h2,
+.section-copy {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.section-copy {
+  max-width: 760px;
+}
+
+/* Bloques de dos columnas perfectamente alineados */
+.studio-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.studio-grid > p,
+.studio-pill {
+  width: 100%;
+}
+
+.studio-pill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1.45;
+}
+
+.studio-pill strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--navy-900);
+  line-height: 1.2;
+}
+
+/* Logos alineados en una cuadrícula uniforme */
+.logo-wall {
+  align-items: stretch;
+}
+
+.logo-tile {
+  height: 100%;
+  text-align: center;
+}
+
+.logo-tile span {
+  width: 100%;
+  text-align: center;
+}
+
+.legal-note {
+  text-align: left;
+}
+
+/* Método de trabajo: todas las tarjetas parten y terminan igual */
+.location-map {
+  align-items: stretch;
+}
+
+.location-card {
+  height: 100%;
+  text-align: left;
+}
+
+/* Corporate update deliberadamente centrado */
+.transition-content,
+.transition-content .kicker,
+.transition-content h2,
+.transition-lead,
+.transition-message {
+  text-align: center;
+}
+
+.transition-lead,
+.transition-message {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer centrado */
+.footer,
+.footer-brand,
+.footer > div {
+  text-align: center;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1050px) {
+  .hero-content,
+  .section-heading,
+  .studio-grid,
+  .logo-wall,
+  .legal-note,
+  .location-map,
+  .transition-content {
+    width: 100%;
+    max-width: 820px;
+  }
+}
+
+/* =========================================================
+   MOVIL
+   ========================================================= */
+
+@media screen and (max-width: 720px) {
+  .hero-content,
+  .section-heading,
+  .studio-grid,
+  .logo-wall,
+  .legal-note,
+  .location-map,
+  .transition-content {
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-heading,
+  .section-index,
+  .section-heading h2,
+  .section-copy {
+    text-align: left;
+  }
+
+  .studio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .studio-grid > p {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .studio-pill {
+    min-height: 88px;
+    margin-bottom: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .logo-wall {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legal-note {
+    text-align: left;
+  }
+
+  .transition-content,
+  .transition-content .kicker,
+  .transition-content h2,
+  .transition-lead,
+  .transition-message {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo-wall {
+    grid-template-columns: 1fr;
+  }
+}
